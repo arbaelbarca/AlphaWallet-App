@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/onboard2" />
+
+        <TextView
+                style="@style/Aw.Typography.Title.Large.Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="@string/text_secure_your_wallet"
+                android:textSize="@dimen/_14sdp" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/text_ket_wallet2"
+                android:textColor="@color/color_blue_dark_text" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/text_ket_wallet2_after"
+                android:textColor="@color/color_blue_dark_text" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/btnRemindLaterWallet"
+                style="@style/Aw.Typography.Title.SemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/action_remind_later"
+                android:textColor="@color/accent"
+                android:textSize="@dimen/_12sdp" />
+
+        <TextView
+                android:id="@+id/btnStartCreateWallet"
+                style="@style/Aw.Component.TextView.Pink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="Start" />
+    </LinearLayout>
+
+</RelativeLayout>

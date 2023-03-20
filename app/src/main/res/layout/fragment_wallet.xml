@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_blur"
+        android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|snap"
+                app:titleEnabled="false">
+
+            <include layout="@layout/layout_simple_toolbar_with_avatar" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.alphawallet.app.widget.LargeTitleView
+                android:id="@+id/large_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|snap" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:baselineAligned="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:id="@+id/btnSendWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_gray_dark"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/arrow_right_light"
+                        tools:ignore="ContentDescription" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:gravity="center"
+                        android:text="@string/sent"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/btnReceivedWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_gray_dark"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/arrow_right_received"
+                        tools:ignore="ContentDescription" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:gravity="center"
+                        android:text="@string/received"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/btnBuyWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_gray_dark"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/arrow_right_received"
+                        tools:ignore="ContentDescription" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:gravity="center"
+                        android:text="@string/text_buy"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                style="@style/Aw.Component.TabLayout.Scrollable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:contentDescription="@string/text_tablayout"
+                android:labelFor="@id/tab_layout"
+                app:layout_scrollFlags="enterAlways"
+                app:tabGravity="center"
+                app:tabSelectedTextColor="@color/text_primary"
+                app:tabTextColor="@color/text_primary" />
+
+        <View style="@style/Aw.Component.Separator" />
+
+        <com.alphawallet.app.widget.NotificationView
+                android:id="@+id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.alphawallet.app.widget.ProgressView
+            android:id="@+id/progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:visibility="gone" />
+
+    <com.alphawallet.app.widget.SystemView
+            android:id="@+id/system_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?actionBarSize"
+            tools:visibility="gone" />
+
+    <TextView
+            android:id="@+id/tvAddToken"
+            style="@style/Aw.Typography.Title.SemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/tiny_8"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/text_add_tokens"
+            android:textAllCaps="false"
+            android:textColor="@color/control_activated"
+            app:drawableStartCompat="@drawable/ic_add_plus_blue" />
+
+    <include
+            android:id="@+id/includeAccountWallet"
+            layout="@layout/layout_account_wallet"
+            android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

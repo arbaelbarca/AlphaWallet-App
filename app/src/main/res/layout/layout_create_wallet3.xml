@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tvSecureWallet3"
+                style="@style/Aw.Typography.Title.SemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="@string/text_secure_your_wallet"
+                android:textSize="@dimen/_15sdp" />
+
+        <TextView
+                android:id="@+id/tvKet1Wallet3"
+                style="@style/Aw.Typography.Title.SemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center|start"
+                android:text="Secure your wallers Seed Phrase"
+                android:textColor="@color/color_blue_dark_text"
+                android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+                style="@style/Aw.Typography.Title.SemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center|start"
+                android:text="Manual"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/_13sdp" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center|start"
+                android:text="Write down your seed phrase on a piece of paper and store in a safe place."
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/_12sdp" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center|start"
+                android:text="Security lever: Very strong"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center|start"
+                android:text="Risks are : \n - You lose it\n - you forget where you pull it \n - Someone else finds it"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/_12sdp" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center|start"
+                android:text="Other options: Doesn't have to be paper!"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center|start"
+                android:text="Tips : \n - Store in bank vault\n - Store in a safe \n - Store in multiple secret places"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/btnStartWallet3"
+            style="@style/Aw.Component.TextView.Pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/text_start" />
+
+</RelativeLayout>
